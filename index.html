@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Subdomain Taken Over</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: #0f0f0f;
+      color: #ff0000;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 4em;
+      margin-bottom: 0.2em;
+      animation: pulse 1s infinite alternate;
+    }
+
+    p {
+      font-size: 1.5em;
+      color: #ff5555;
+    }
+
+    @keyframes pulse {
+      from {
+        text-shadow: 0 0 10px #ff0000;
+      }
+      to {
+        text-shadow: 0 0 30px #ff0000, 0 0 60px #ff0000;
+      }
+    }
+
+    .warning-box {
+      border: 3px solid #ff0000;
+      padding: 2em;
+      border-radius: 10px;
+      background-color: rgba(255, 0, 0, 0.1);
+    }
+
+    .footer {
+      margin-top: 2em;
+      font-size: 0.9em;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+  <div class="warning-box">
+    <h1>⚠️ Subdomain Taken Over!</h1>
+    <p>This domain was not properly configured and is now under external control.</p>
+    <p>If you're the owner, secure your DNS settings immediately.</p>
+  </div>
+  <div class="footer">
+    &copy; 2025 - Ethical Notice Page by Security Researcher
+  </div>
+</body>
+</html>
